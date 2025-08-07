@@ -1,9 +1,20 @@
+/* 
+    * Motivational Quotes
+    After every Recorded Event, the program displays one of three random quotes
+    to motivate the user.
+    * Checklist goals award their bonus only once.
+*/
+
 using System;
 
-class Program
+namespace EternalQuest
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello World! This is the EternalQuest Project.");
+        static void Main(string[] args)
+        {
+            GoalManager manager = new GoalManager();
+            manager.Start();
+        }
     }
 }
